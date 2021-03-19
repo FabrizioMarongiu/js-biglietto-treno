@@ -30,16 +30,16 @@ if (age <= 17) {
     var discount = '20%';
     console.log( yourName ,'il prezzo finale è: ', finalPrice , '. Hai usufruito del 20% di sconto.'); 
     document.getElementById('sconto').innerHTML = discount;
-    document.getElementById('prezzo').innerHTML = finalPrice;
+    document.getElementById('prezzo').innerHTML = finalPrice + " €";
 } else if (age >= 65){
     var finalPrice = ( price - ( ( price * 40) / 100 ));
     console.log( yourName , 'il prezzo finale è: ', finalPrice , '. Hai usufruito del 40% di sconto.' ); 
     var discount = '40%';
     document.getElementById('sconto').innerHTML = discount;
-    document.getElementById('prezzo').innerHTML = finalPrice;
+    document.getElementById('prezzo').innerHTML = finalPrice + " €";
 } else{
     console.log( yourName , 'il prezzo finale è: ', price , '. Non abbiamo potuto applicare nessuno sconto.' ); 
     var discount = 'Nessuno sconto applicabile';
     document.getElementById('sconto').innerHTML = discount;
-    document.getElementById('prezzo').innerHTML = price;
+    document.getElementById('prezzo').innerHTML = price + " €";
 }
